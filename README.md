@@ -46,8 +46,10 @@
 7. Um Review beten
 8. Ggf verbessern
 9. In den main branch mergen
+* Vielleicht fragt dich jemand nach einem Code Review: Stelle eher Fragen als zu kritisieren!
 * Benutze tools wie Reshaper um Templates und Shortcuts nutzen zu können (und selbst zu erstellen.
 * Trainiere durch [Coding Catas](https://en.wikipedia.org/wiki/Kata_(programming)) diese sicher zu benutzen.
+
 
 # Was ich vor dem Einchecken oder während des Reviews beachte
 ## Modellierung
@@ -95,7 +97,8 @@
 * Testklassen sollten eine Klasse testen und in regions pro Methode eingeteilt werden
 * Kein Programmcode umschreiben für tests (https://github.com/Moq/moq4/wiki/Quickstart benutzen)
 * Mocking so wenig wie möglich benutzen durch Aufteilung in [Layered Architecture](https://www.oreilly.com/library/view/software-architecture-patterns/9781491971437/ch01.html)
-## Das Review
+* Keine Voodoo Sleeps. Lieber mit async arbeiten.
+## Speziel im Review
 * Reviewe auch die Changelog-Kommentare
 * Reviewe auch die Tests (nach verständlichkeit und Äquivalenzklassenabdeckung)
 * Reviewe ggf. passende Doku
