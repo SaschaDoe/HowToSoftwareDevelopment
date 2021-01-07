@@ -67,29 +67,29 @@
 * https://en.wikipedia.org/wiki/SOLID
 * [Don't repeat yourself](https://de.wikipedia.org/wiki/Don%E2%80%99t_repeat_yourself) aber nicht übertreiben https://en.wikipedia.org/wiki/Rule_of_three_(computer_programming)
 * Obere Klassen sollten eine hohe Abstraktion haben. Das "Was" sollte man dort eher als das "Wie" erkennen.  
-* Versuche den Code [referenzielle transparent](https://de.wikipedia.org/wiki/Referenzielle_Transparenz) zu halten, um später leichter paralellisieren zu können und um nicht den Überblick zu verlieren.
+* Versuche den Code [referenzielle transparent](https://de.wikipedia.org/wiki/Referenzielle_Transparenz) zu halten, um später leichter parallelisieren zu können und um nicht den Überblick zu verlieren.
 ## Funktional
 => Aus oben genannten Gründen ist es manchmal ratsam deklarativ, [funktional](https://de.wikipedia.org/wiki/Funktionale_Programmierung) statt OOP imperativ zu Programmieren. Man kann beide paradigmen miteinander in C# kombinieren.
-* Funktionen sollten in Funktionen mit nebeneffekten und ohne nebeneffekte getrennt werden
-* Funktionen mit nebeneffekten sollten zwischen denen ohne nebeneffekten stehen (Dependency Rejection)
+* Funktionen sollten in Funktionen mit nebeneffekten und ohne Nebeneffekte getrennt werden
+* Funktionen mit Nebeneffekten sollten zwischen denen ohne Nebeneffekten stehen (Dependency Rejection)
 * Spreche durch entsprechende Funktionen in der Domänen Sprache
 * Unveränderliche Daten: Benutze immer generatoren statt iteratoren
-* Keine Rekursion gibt nur stack probleme. Lieber Sequencen erstellen und takeWhile benutzen (unendlicher lauf natürlich bei beiden nicht vermeidbar)
+* Keine Rekursion gibt nur stack probleme. Lieber unendliche Sequenzen erstellen und [takeWhile](https://docs.microsoft.com/de-de/dotnet/api/system.linq.enumerable.takewhile?view=net-5.0) benutzen (durch falsche Abbruchbedingung ausgelöster unendlicher Lauf ist bei Beiden nicht zu vermeiden)
 ## Syntaktishes
-* Alles sollte von links nach rechts wie fließtext lesbar sein (kein horizontal alignment)
-* Bennenung von Variablen, Methoden, Klassen
+* Alles sollte von links nach rechts wie Fließtext lesbar sein (kein horizontal alignment)
+* Benennung von Variablen, Methoden, Klassen
 * Keine Hardcoded Strings (wenn dann abstrahieren und am Anfang der Klasse oder in einem eigenen Bereich)
 * Keine Klassen in Klassen (immer ein File pro Klasse)
 * Namespaces sollten mit Verzeichnissen übereinstimmen
-* Nicht im Quellcode Kommentieren (lieber sprechende namen verwenden) außer Externes Framework ist verwirrend in der benutzung
+* Nicht im Quellcode Kommentieren (lieber sprechende Namen verwenden) außer Externes Framework ist verwirrend in der Benutzung
 * Dafür über public class members mit xml kommentieren (um später die doku automatisch erstellen zu können)
-* Die Reihenfolde von "Class Members" sollte überall gleich sein 
+* Die Reihenfolge von "Class Members" sollte überall gleich sein 
 * Abstraktionslevel in Methoden sollte gleich sein
 * Klassen und Methoden sollten nicht zu groß werden (Single Responsebility)
 * Linkslesbarkeit und wenige Parameter sind am besten
 ## Sonstiges
-* Datentypen sind nicht unendlich, Mathe setzt dies aber oft vorraus. Ist dies in der Anwendung ein Problem? (manchmal besser domänen spezifische typen verwenden)
-* Könnten die Daten die verwendet werden sehr groß werden? Können sie überhaupt in den Arbeitsspeicher? Generatoren (also funktionale programmierung) könnte hier helfen 
+* Datentypen sind nicht unendlich, Mathe setzt dies aber oft voraus. Ist dies in der Anwendung ein Problem? (manchmal besser domänen spezifische typen verwenden)
+* Könnten die Daten die verwendet werden sehr groß werden? Können sie überhaupt in den Arbeitsspeicher? Generatoren (also funktionale Programmierung) könnte hier helfen 
 ## Testing
 * Tests sollten ein Ding testen und es auch benennen (so kann ich sehen was schiefläuft falls er rot wird)
 * Tests sollten [reliabel](https://de.wikipedia.org/wiki/Reliabilit%C3%A4t) sein
@@ -101,7 +101,7 @@
 * Kein Programmcode umschreiben für tests (https://github.com/Moq/moq4/wiki/Quickstart benutzen)
 * Mocking so wenig wie möglich benutzen durch Aufteilung in [Layered Architecture](https://www.oreilly.com/library/view/software-architecture-patterns/9781491971437/ch01.html)
 * Keine Voodoo Sleeps. Lieber mit async arbeiten.
-## Speziel im Review
+## Speziell im Review
 * Reviewe auch die Changelog-Kommentare
 * Reviewe auch die Tests (nach verständlichkeit und Äquivalenzklassenabdeckung)
 * Reviewe ggf. passende Doku
