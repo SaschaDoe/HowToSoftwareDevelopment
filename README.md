@@ -39,12 +39,17 @@
 8. Ggf verbessern
 9. In den main branch mergen
 
-## Was ich vor dem Einchecken oder während des Reviews beachte
-Bennenung von Variablen, Methoden, Klassen
-https://de.wikipedia.org/wiki/Gesetz_von_Demeter
-https://de.wikipedia.org/wiki/Command-Query-Separation
-https://en.wikipedia.org/wiki/SOLID
-https://de.wikipedia.org/wiki/Don%E2%80%99t_repeat_yourself aber nicht übertreiben https://en.wikipedia.org/wiki/Rule_of_three_(computer_programming)
+## Was ich vor dem Einchecken oder während des Reviews beachte  
+* https://de.wikipedia.org/wiki/Gesetz_von_Demeter also datenkapselung beachten
+* Bennenung von Variablen, Methoden, Klassen
+* https://de.wikipedia.org/wiki/Command-Query-Separation
+* https://en.wikipedia.org/wiki/SOLID
+* [Don't repeat yourself](https://de.wikipedia.org/wiki/Don%E2%80%99t_repeat_yourself) aber nicht übertreiben https://en.wikipedia.org/wiki/Rule_of_three_(computer_programming)
+* Obere Klassen sollten eine hohe Abstraktion haben. Das "Was" sollte man dort eher als das "Wie" erkenne.
+=> Aus oben genannten Gründen ist es manchmal ratsam deklarativ, [funktional](https://de.wikipedia.org/wiki/Funktionale_Programmierung) zu Programmieren. Man kann beide paradigmen miteinander in C# kombinieren
+* Funktionen sollten in Funktionen mit nebeneffekten und ohne nebeneffekte getrennt werden
+* Funktionen mit nebeneffekten sollten zwischen denen ohne nebeneffekten stehen (Dependency Rejection)
+### Syntaktishes
 * Keine Hardcoded Strings (wenn dann abstrahieren und am Anfang der Klasse oder in einem eigenen Bereich)
 * Keine Klassen in Klassen (immer ein File pro Klasse)
 * Namespaces sollten mit Verzeichnissen übereinstimmen
