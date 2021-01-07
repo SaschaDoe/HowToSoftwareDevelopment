@@ -56,10 +56,12 @@
 * Versuche Kopplung zu vermeiden
 * Es muss in den unteren Methoden exceptions geworfen werden und in den oberen aufgefangen.
 * Niemals Fehler weiter werfen (throw in catch statement)
+* https://de.wikipedia.org/wiki/Gesetz_von_Demeter
 ## OOP
 * Benutze Polymorphismus statt mit if einen typ abzufragen 
 * Wenn OOP dann die [Wirklichkeit](https://de.wikipedia.org/wiki/Fachlichkeit) versuchen zu [analysieren und abzubilden](https://de.wikipedia.org/wiki/Objektorientierte_Analyse_und_Design#Objektorientierte_Analyse) und [Design Patterns](https://en.wikipedia.org/wiki/Software_design_pattern) verwenden.
-* https://de.wikipedia.org/wiki/Gesetz_von_Demeter also datenkapselung beachten
+* Datenkapselung beachten
+* Nicht zu tief Vererben
 * https://de.wikipedia.org/wiki/Command-Query-Separation
 * https://en.wikipedia.org/wiki/SOLID
 * [Don't repeat yourself](https://de.wikipedia.org/wiki/Don%E2%80%99t_repeat_yourself) aber nicht übertreiben https://en.wikipedia.org/wiki/Rule_of_three_(computer_programming)
