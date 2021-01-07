@@ -10,9 +10,9 @@
 ### Transparent Arbeiten
 * Arbeite immer mit Anforderungen die am besten so offen wie möglich aufgeschrieben werden 
 * [Fail-Fast](https://www.agile-academy.com/de/agiles-lexikon/fail-fast-schnell-scheitern/): Arbeite an den Anforderungen zu erst die dem Kunden viel Wert sind, die aber auch ein großes Risiko des Scheiterns beinhalten.
-* Checke auf einen entwicklungsbranch ein
+* Checke auf einen Entwicklungsbranch ein nicht direkt auf Master
 * Checke oft, also klein ein. -> Single Responsebility
-* Checke wenn es nicht zu große Umstände bereitet entweder Refactorings von Transformations trennen
+* Checke wenn es nicht zu große Umstände bereitet entweder Refactorings oder Transformations ein
 * Kommentiere deinen check in
 * Verbinde den check in mit den Anforderungen
 * Frage selbständig nach einem Code Review
