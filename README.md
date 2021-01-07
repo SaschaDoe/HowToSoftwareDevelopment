@@ -6,6 +6,7 @@
 * Versuche das Ziel des Kunden zu erfahren     
 * Versuche zu erfahren wer alle Stakeholder des Produktes sind  
 * Versuche zu erfahren welche End Nutzer es gibt und wie diese [denken](https://www.oreilly.com/library/view/97-things-every/9780596809515/ch03.html)
+* Der Kunde bestenfalls User sollte die Arbeit der letzten Wochen sehen und kommentieren (Sprint review)
   
 ### Transparent Arbeiten
 * Arbeite immer mit Anforderungen die am besten so offen wie möglich aufgeschrieben werden 
@@ -16,7 +17,7 @@
 * Kommentiere deinen check in
 * Verbinde den check in mit den Anforderungen
 * Frage selbständig nach einem Code Review
-* Der Kunde sollte die Arbeit der letzten Wochen sehen und kommentieren (Sprint review)
+
 * Nach einem Sprint sollte eine Retrospektive abgehalten werden 
   * Was lief gut 
   * Was schlecht, 
