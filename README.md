@@ -75,7 +75,7 @@
 * Spreche durch entsprechende Funktionen in der Domänen Sprache
 * Unveränderliche Daten: Benutze immer generatoren statt iteratoren
 * Keine Rekursion gibt nur stack probleme. Lieber unendliche Sequenzen erstellen und [takeWhile](https://docs.microsoft.com/de-de/dotnet/api/system.linq.enumerable.takewhile?view=net-5.0) benutzen (durch falsche Abbruchbedingung ausgelöster unendlicher Lauf ist bei Beiden nicht zu vermeiden)
-## Syntaktishes
+## Syntaktisches
 * Alles sollte von links nach rechts wie Fließtext lesbar sein (kein horizontal alignment)
 * Benennung von Variablen, Methoden, Klassen
 * Keine Hardcoded Strings (wenn dann abstrahieren und am Anfang der Klasse oder in einem eigenen Bereich)
