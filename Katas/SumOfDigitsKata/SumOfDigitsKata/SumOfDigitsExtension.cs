@@ -14,7 +14,30 @@ namespace SumOfDigitsKata
             var sum = digits;
             while (numberOfDigits > 1)
             {
-                var numbers = new int[numberOfDigits]; 
+                var numbers = new int[numberOfDigits];
+                text = sum.ToString();
+                for (var i = 0; i < numberOfDigits; i++)
+                {
+                    numbers[i] = Int32.Parse(text[i].ToString());
+                }
+
+                sum = numbers.Sum();
+                var sumText = sum.ToString();
+                numberOfDigits = sumText.Length;
+            }
+            
+            return sum;
+        }
+        
+        public static int SumOfDigitsFunctional(this int digits)
+        {
+            var text = digits.ToString();
+            var numberOfDigits = text.Length;
+            var sum = digits;
+            while (numberOfDigits > 1)
+            {
+                var numbers = new int[numberOfDigits];
+                text = sum.ToString();
                 for (var i = 0; i < numberOfDigits; i++)
                 {
                     numbers[i] = Int32.Parse(text[i].ToString());
