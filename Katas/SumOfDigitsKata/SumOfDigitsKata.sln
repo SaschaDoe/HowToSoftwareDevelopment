@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SumOfDigitsKata", "SumOfDigitsKata\SumOfDigitsKata.csproj", "{09E669AE-0DD6-4B85-933D-29C33DEA03A7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SumOfDigitsKataTests", "SumOfDigitsKataTests\SumOfDigitsKataTests.csproj", "{08F000D2-5EC8-4C21-BB4D-8D17FD97269D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{09E669AE-0DD6-4B85-933D-29C33DEA03A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{09E669AE-0DD6-4B85-933D-29C33DEA03A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{09E669AE-0DD6-4B85-933D-29C33DEA03A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08F000D2-5EC8-4C21-BB4D-8D17FD97269D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08F000D2-5EC8-4C21-BB4D-8D17FD97269D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08F000D2-5EC8-4C21-BB4D-8D17FD97269D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08F000D2-5EC8-4C21-BB4D-8D17FD97269D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
