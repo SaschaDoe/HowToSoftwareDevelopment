@@ -28,6 +28,11 @@ namespace SumOfDigitsKata
             
             return sum;
         }
+
+        public static IEnumerable<int> ParseStringToInt(string input)
+        {
+            return input.Select(t => int.Parse(t.ToString()));
+        }
         
         public static int SumOfDigitsFunctional(this int digits)
         {
@@ -36,13 +41,9 @@ namespace SumOfDigitsKata
             var sum = digits;
             while (numberOfDigits > 1)
             {
-                var numbers = new int[numberOfDigits];
+                
                 text = sum.ToString();
-                for (var i = 0; i < numberOfDigits; i++)
-                {
-                    numbers[i] = Int32.Parse(text[i].ToString());
-                }
-
+                var numbers = ParseStringToInt(text);
                 sum = numbers.Sum();
                 var sumText = sum.ToString();
                 numberOfDigits = sumText.Length;
