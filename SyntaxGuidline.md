@@ -34,8 +34,6 @@ public class Order
         _numbers = numbers;
     }
 }
-
 </p>
-
 </details>  
-
+```
