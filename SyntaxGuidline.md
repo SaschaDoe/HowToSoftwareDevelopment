@@ -1,28 +1,27 @@
 #Guidline for Syntax in C# 
 (most is helpfull in other languages as well)
 
+## Names
 <details>
-  <summary>Click to expand!</summary>
+  <summary>Call things by real name</summary>
   
-  ## Heading
-  1. A numbered
-  2. list
-     * With some
-     * Sub bullets
-     
+**Bad**
+  
   <p>
 
 ```c#
-public class Order
+public class Containers
 {
-    public int OrderId { get; set; }
-    public int CustomerId { get; set; }
+    List<int> _ns;
 
-    public List<int> Products { get; set; }
+    public void Process(List<int> number)
+    {
+      _ns = number;
+    }
 }
 \```
-
 </p>
-</details>
 
+**Good**
+</details>
 
