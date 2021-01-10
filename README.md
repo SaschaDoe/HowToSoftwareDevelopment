@@ -92,7 +92,7 @@ Zu Nützlichkeit zählt:
 ## Syntaktisches
 * Immer in englisch programmieren 
 * Style guide beachten wenn es einen gibt (wie in allen zen-Lab Projekten) sonst [C# Code Conventions](https://docs.microsoft.com/de-de/dotnet/csharp/programming-guide/inside-a-program/coding-conventions)
-* Alles sollte von links nach rechts wie Fließtext lesbar sein (kein horizontal alignment)
+* Alles sollte von links nach rechts wie Fließtext lesbar sein (kein horizontal alignment, kein GOTO, keine tiefe Verschachtellung, die man von Innen nach links außen lesen muss: AddOne(CastValue(ReadFromConsole())))
 * Benennung von Variablen, Methoden, Klassen
 * Keine Hardcoded Strings (wenn dann abstrahieren und am Anfang der Klasse oder in einem eigenen Bereich)
 * Keine Klassen in Klassen (immer ein File pro Klasse)
