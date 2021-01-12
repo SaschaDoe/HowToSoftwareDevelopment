@@ -697,7 +697,52 @@ public List<EmployeeData> ShowList(Employee employees)
     }
 }
 ```
+
+<details>
+  <summary>Command Querry Seperation</summary>
+[CQS](https://de.wikipedia.org/wiki/Command-Query-Separation)
+
+  </details>
+  
+  <details>
+  <summary>Referential transparency</summary>
+[referential transparency](https://en.wikipedia.org/wiki/Referential_transparency)
+
+  </details>
+
+
 </details>
+<details>
+  <summary>OOP</summary>
+Try to [analyse](https://de.wikipedia.org/wiki/Objektorientierte_Analyse_und_Design#Objektorientierte_Analyse) and depict [reality](https://de.wikipedia.org/wiki/Fachlichkeit). Additionally some problems can be solved by [Design Patterns](https://en.wikipedia.org/wiki/Software_design_pattern) verwenden.
+
+  Advantages:  
+  * Good structure of classes that you no from the domain
+  Disadvantages:  
+  * Hard to parallise
+  * Many bugs through null values and state changes
+  * You must use (non domain) design patterns with many classes
+  * Not declarive
+  
+  See: [FizzBuzzEnterprise](https://github.com/EnterpriseQualityCoding/FizzBuzzEnterpriseEdition)
+  </details>
+
+<details>
+  <summary>Functional Programming</summary>
+You can programm functional, means with another declarative [paradigm](https://en.wikipedia.org/wiki/Programming_paradigm) in C#. 
+
+  Advantages:  
+  * Declarative and dense at highest level
+  * Easy to parallise
+  * Easy to test (many single functions without side effects)
+  * Design Patterns are single liners
+ 
+  Disadvantages:  
+  * Sometimes performance
+  * High learning curve: Many programmers don't know how to use expressions
+  
+  </details>
+
 
 ## Concurrency
 
@@ -705,7 +750,7 @@ public List<EmployeeData> ShowList(Employee employees)
   <summary>Use Async await</summary>
   Asynchronus calls are not easy to understand. You should plan this with other team members.
  
- ## Summary of Asynchronous Programming Guidelines
+ ### Summary of Asynchronous Programming Guidelines
 
 |        Name       |                    Description                    |           Exceptions          |
 |-------------------|---------------------------------------------------|-------------------------------|
@@ -713,7 +758,7 @@ public List<EmployeeData> ShowList(Employee employees)
 | Async all the way | Don't mix blocking and async code                 | Console main method           |
 | Configure context | Use `ConfigureAwait(false)` when you can          | Methods that require con­text  |
 
-## The Async Way of Doing Things
+### The Async Way of Doing Things
 
 |              To Do This ...              |    Instead of This ...     |       Use This       |
 |------------------------------------------|----------------------------|----------------------|
@@ -722,7 +767,7 @@ public List<EmployeeData> ShowList(Employee employees)
 | Retrieve the results of multiple tasks   | `Task.WaitAll`             | `await Task.WhenAll` |
 | Wait a period of time                    | `Thread.Sleep`             | `await Task.Delay`   |
 
-## Know Your Tools
+### Know Your Tools
 
 There's a lot to learn about async and await, and it's natural to get a little
 disoriented. Here's a quick reference of solutions to common problems.
@@ -740,7 +785,7 @@ disoriented. Here's a quick reference of solutions to common problems.
 | Asynchronously initialize a resource            | `AsyncLazy<T>`                                                                    |
 | Async-ready producer/consumer structures        | TPL Dataflow or `AsyncCollection<T>`                                              |
 
-## Async and Await Guidelines
+### Async and Await Guidelines
 
 Read the [Task-based Asynchronous Pattern (TAP) document](http://www.microsoft.com/download/en/details.aspx?id=19957).
 It is extremely well-written, and includes guidance on API design and the proper
@@ -759,8 +804,8 @@ code, you're Doing It Wrong(TM):
 | `Thread.Sleep`     | `await Task.Delay`                   | Wait/await for a period of time                               |
 | `Task` constructor | `Task.Run` or `TaskFactory.StartNew` | Create a code-based task                                      |
  
- </details>
-
+ </details> 
+ 
 ## Comments
 
 
