@@ -915,6 +915,12 @@ code, you're Doing It Wrong(TM):
 </details>
 
 ## Error Handling
+
+<details>
+  <summary>Throw early and catch late</summary>
+
+</details>
+
 <details>
   <summary>Never use throw ex</summary>
   
