@@ -746,7 +746,15 @@ Try to [analyse](https://en.wikipedia.org/wiki/Object-oriented_analysis_and_desi
 <details>
   <summary>Functional Programming</summary>
 You can programm functional, means with another declarative [paradigm](https://en.wikipedia.org/wiki/Programming_paradigm) in C#. 
-
+  
+  How to:
+  * Code in Expressions instead of using loops and if else
+  * Pure functions should be seperated from unpure functions (dependency rejection)
+  * Data and Methods are stricly seperated
+  * Immutable data only
+  * No recursion. Use of generators and [takeWhile](https://docs.microsoft.com/de-de/dotnet/api/system.linq.enumerable.takewhile?view=net-5.0)
+  * Pipelining
+  
   Advantages:  
   * Declarative and dense at highest level
   * Easy to parallise
@@ -845,8 +853,6 @@ code, you're Doing It Wrong(TM):
 <details>
   <summary>Don't commend code, use descriptive names instead/summary>
   With the exception of commending in xml about public members to enable automated documentation generation.
-
-```
 
 </details>
 
