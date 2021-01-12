@@ -234,7 +234,7 @@ if (user == UserRoles.Admin.Name) //EnumClass
 </details>
 
 <details>
-  <summary>Check NULLS at the outside of your code. Better to avoid them beorehand</summary>
+  <summary>Check NULLS at the outside of your code. Better to avoid them beforehand</summary>
   
 **Bad**
 
@@ -914,20 +914,187 @@ code, you're Doing It Wrong(TM):
 
 </details>
 
-## Sonstiges
-* Datentypen sind nicht unendlich, Mathe setzt dies aber oft voraus. Ist dies in der Anwendung ein Problem? (manchmal besser domänen spezifische typen verwenden)
-* Könnten die Daten die verwendet werden sehr groß werden? Können sie überhaupt in den Arbeitsspeicher? Generatoren (also funktionale Programmierung) könnte hier helfen 
+## Error Handling
+<details>
+  <summary>Never use throw ex</summary>
+  
+  **Bad**
+  
+<p>
+
+```c#
+try
+{
+    // Do something..
+}
+catch (Exception ex)
+{
+    // Any action something like roll-back or logging etc.
+    throw ex;
+}
+```
+
+</details>
+
+<details>
+  <summary>Don't ignore caught errors</summary>
+  
+  **Bad**
+  
+<p>
+
+```c#
+try
+{
+    FunctionThatMightThrow();
+}
+catch (Exception ex)
+{
+    // silent exception
+}
+```
+
+</details>
+
+<details>
+  <summary>Keep exception stack trace when rethrowing exceptions</summary>
+  C# allows the exception to be rethrown in a catch block using the throw keyword. It is a bad practice to throw a caught exception using throw e;. This statement resets the stack trace. Instead use throw;. This will keep the stack trace and provide a deeper insight about the exception. Another option is to use a custom exception. Simply instantiate a new exception and set its inner exception property to the caught exception with throw new CustomException("some info", e);. Adding information to an exception is a good practice as it will help with debugging. However, if the objective is to log an exception then use throw; to pass the buck to the caller.
+  
+  **Bad**
+  
+<p>
+
+```c#
+try
+{
+    FunctionThatMightThrow();
+}
+catch (Exception ex)
+{
+    logger.LogInfo(ex);
+    throw ex;
+}
+```
+
+</details>
+
 ## Testing
-* Tests sollten ein Ding testen und es auch benennen (so kann ich sehen was schiefläuft falls er rot wird)
-* Tests sollten [reliabel](https://de.wikipedia.org/wiki/Reliabilit%C3%A4t) sein
-* One Assert per Test sollte die Regel sein aber es gilt eher eine Sache sollte abgetestet werden (die kann auch mal komplexer sein)
-* Tests sollten unabhängig voneinander (ausführbar) sein.
-* https://de.wikipedia.org/wiki/Model_View_ViewModel für UI benutzen
-* Testprojekt Verzeichnis sollte mit Projektverzeichnis übereinstimmen
-* Testklassen sollten eine Klasse testen und in regions pro Methode eingeteilt werden
-* Kein Programmcode umschreiben für tests (https://github.com/Moq/moq4/wiki/Quickstart benutzen)
-* Mocking so wenig wie möglich benutzen durch Aufteilung in [Layered Architecture](https://www.oreilly.com/library/view/software-architecture-patterns/9781491971437/ch01.html)
-* Keine Voodoo Sleeps. Lieber mit async arbeiten.
+
+<details>
+  <summary>Arrange Act Assert</summary>
+  
+ 
+  **Good**
+  
+<p>
+
+```c#
+    [Fact]
+    public void Handle30DayMonths()
+    {
+        var date = new MyDateTime("1/1/2015");
+
+        date.AddDays(30);
+
+        Assert.Equal("1/31/2015", date);
+    }
+```
+
+</details>
+
+<details>
+  <summary>Single responsebility in Testing</summary>
+
+  
+  **Bad**
+  
+<p>
+
+```c#
+public class MakeDotNetGreatAgainTests
+{
+    [Fact]
+    public void HandleDateBoundaries()
+    {
+        var date = new MyDateTime("1/1/2015");
+        date.AddDays(30);
+        Assert.Equal("1/31/2015", date);
+
+        date = new MyDateTime("2/1/2016");
+        date.AddDays(28);
+        Assert.Equal("02/29/2016", date);
+
+        date = new MyDateTime("2/1/2015");
+        date.AddDays(28);
+        Assert.Equal("03/01/2015", date);
+    }
+}
+```
+
+  **Good**
+  
+<p>
+
+```c#
+public class MakeDotNetGreatAgainTests
+{
+    [Fact]
+    public void Handle30DayMonths()
+    {
+        var date = new MyDateTime("1/1/2015");
+
+        date.AddDays(30);
+
+        Assert.Equal("1/31/2015", date);
+    }
+
+    [Fact]
+    public void HandleLeapYear()
+    {
+        var date = new MyDateTime("2/1/2016");
+
+        date.AddDays(28);
+
+        Assert.Equal("02/29/2016", date);
+    }
+
+    [Fact]
+    public void HandleNonLeapYear()
+    {
+        var date = new MyDateTime("2/1/2015");
+        
+        date.AddDays(28);
+
+        Assert.Equal("03/01/2015", date);
+    }
+}
+```
+
+</details>
+
+<details>
+  <summary>Equivalence partitioningt</summary>
+  100% Code coverage is not enough. It is best to have a 100% equivalence partitioning. But sometimes with heavy math it is not easy to accomplish and not possible to know in a not logical programming paradigma. Test also on the minimum and maximum values of value types and with very big objects.
+  [Equivalence partitioning](https://en.wikipedia.org/wiki/Equivalence_partitioning)
+</details>
+
+
+<details>
+  <summary>Reliabel, independent and well namend</summary>
+  Tests should be reliabel](https://de.wikipedia.org/wiki/Reliabilit%C3%A4t). They should be independent of other tests and have a short but descriptive name of which method you use, which outcome you expect and which preconditions are set. One test class should test one class and for every method there should be a region.
+</details>
+
+
+<details>
+  <summary>Don't change code to test</summary>
+Unless it is adding an interface for [mocking](https://github.com/Moq/moq4/wiki/Quickstart). 
+</details>
+
+<details>
+  <summary>No voodoo sleeps</summary>
+
+</details>
+
 ## Speziell im Review
 * Reviewe auch die Changelog-Kommentare
 * Reviewe auch die Tests (nach verständlichkeit und Äquivalenzklassenabdeckung)
