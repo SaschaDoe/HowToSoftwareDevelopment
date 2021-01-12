@@ -397,7 +397,7 @@ public class Manager
 ```
 </details>
 
-details>
+<details>
   <summary>Don’t repeat yourself (DRY)</summary>
 [Don't repeat yourself](https://de.wikipedia.org/wiki/Don%E2%80%99t_repeat_yourself) aber nicht übertreiben https://en.wikipedia.org/wiki/Rule_of_three_(computer_programming)
   
