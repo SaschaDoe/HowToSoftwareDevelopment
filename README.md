@@ -15,3 +15,4 @@ The goal of the best practises is:
 * Efficiency: Don't bother with unnecessary ones and with your IDE
 
 
+[Best Practises for Coding](ConsiderWhileCodingAndReviewing.md)
