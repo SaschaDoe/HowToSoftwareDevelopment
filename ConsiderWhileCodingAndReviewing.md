@@ -825,6 +825,7 @@ You can programm functional, means with another declarative [paradigm](https://e
   
   </details>
 
+* For more Architecture best practices see [Clean Architecture](https://github.com/thangchung/clean-code-dotnet/blob/master/cheatsheets/Clean-Architecture-V1.0.pdf)
 
 ## Concurrency
 
@@ -1101,8 +1102,8 @@ Unless it is adding an interface for [mocking](https://github.com/Moq/moq4/wiki/
 
 </details>
 
-## Speziell im Review
-* Reviewe auch die Changelog-Kommentare
-* Reviewe auch die Tests (nach verständlichkeit und Äquivalenzklassenabdeckung)
-* Reviewe ggf. passende Doku
-* Lasse einen Reviewer allein durch das changeset gehen (und finde so heraus, ob jemand sich auch allein zurechtfindet)
+## Review Tipps
+* review also the changelog commentars
+* review also tests (do you understand them, is something missing?)
+* review also docu
+* the one that reviews your code should see it beforehand alone
