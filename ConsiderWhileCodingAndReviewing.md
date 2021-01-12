@@ -910,7 +910,7 @@ code, you're Doing It Wrong(TM):
 </details>
 
 <details>
-  <summary>Don't commend code, use descriptive names instead/summary>
+  <summary>Don't commend code, use descriptive names instead</summary>
   With the exception of commending in xml about public members to enable automated documentation generation.
 
 </details>
