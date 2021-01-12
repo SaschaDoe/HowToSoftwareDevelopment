@@ -34,6 +34,34 @@ public class Order
 }
 ```
 </details>
+
+<details>
+  <summary>Use pronounceable names</summary>
+  
+**Bad**
+
+<p>
+
+```c#
+public class Employee
+{
+    public Datetime sWorkDate { get; set; } // what the heck is this
+    public Datetime modTime { get; set; } // same here
+}
+
+
+```
+**Good**
+
+```c#
+public class Employee
+{
+    public Datetime StartWorkingDate { get; set; }
+    public Datetime ModificationTime { get; set; }
+}
+```
+</details>
+
 <details>
   <summary>Dense language (short but with much information)</summary>
   
