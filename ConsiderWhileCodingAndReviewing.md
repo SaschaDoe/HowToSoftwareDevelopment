@@ -80,6 +80,64 @@ public class Order
 </details>
 
 <details>
+  <summary>Order of class members</summary>
+  
+  The order of the class members should be equal (fields, properties, constructor, public, private etc) Reshaper can this outomatically.
+
+</details>
+
+<details>
+  <summary>Left readability</summary>
+  
+  **Bad**
+
+<p>
+
+```c#
+public Car
+{
+  public void TireChange(Tire tire)
+  {
+    var tool = Toolsbox.GetTool();
+    var isChanged = tool.TryToChangeTire(tire);
+    if(isChanged)
+    {
+      IsChanged = true;
+    }else
+    {
+      IsChanged = false;
+    }
+  }
+}
+```
+**Good**
+
+```c#
+public Car
+{
+  public void TireChange()
+  {
+    TireChangeTool.ChangeTire(_tire);
+  }
+  
+  public bool IsChanged
+  {
+    get
+    {
+        if(_tire.IsChanged)
+        {
+          return true;
+        }
+        
+        return false;
+    }
+  }
+}
+```
+
+</details>
+
+<details>
   <summary>Avoid  coupling</summary>
   
   [Couplig](https://en.wikipedia.org/wiki/Coupling_(computer_programming))
