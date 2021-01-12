@@ -914,3 +914,22 @@ code, you're Doing It Wrong(TM):
 
 </details>
 
+## Sonstiges
+* Datentypen sind nicht unendlich, Mathe setzt dies aber oft voraus. Ist dies in der Anwendung ein Problem? (manchmal besser domänen spezifische typen verwenden)
+* Könnten die Daten die verwendet werden sehr groß werden? Können sie überhaupt in den Arbeitsspeicher? Generatoren (also funktionale Programmierung) könnte hier helfen 
+## Testing
+* Tests sollten ein Ding testen und es auch benennen (so kann ich sehen was schiefläuft falls er rot wird)
+* Tests sollten [reliabel](https://de.wikipedia.org/wiki/Reliabilit%C3%A4t) sein
+* One Assert per Test sollte die Regel sein aber es gilt eher eine Sache sollte abgetestet werden (die kann auch mal komplexer sein)
+* Tests sollten unabhängig voneinander (ausführbar) sein.
+* https://de.wikipedia.org/wiki/Model_View_ViewModel für UI benutzen
+* Testprojekt Verzeichnis sollte mit Projektverzeichnis übereinstimmen
+* Testklassen sollten eine Klasse testen und in regions pro Methode eingeteilt werden
+* Kein Programmcode umschreiben für tests (https://github.com/Moq/moq4/wiki/Quickstart benutzen)
+* Mocking so wenig wie möglich benutzen durch Aufteilung in [Layered Architecture](https://www.oreilly.com/library/view/software-architecture-patterns/9781491971437/ch01.html)
+* Keine Voodoo Sleeps. Lieber mit async arbeiten.
+## Speziell im Review
+* Reviewe auch die Changelog-Kommentare
+* Reviewe auch die Tests (nach verständlichkeit und Äquivalenzklassenabdeckung)
+* Reviewe ggf. passende Doku
+* Lasse einen Reviewer allein durch das changeset gehen (und finde so heraus, ob jemand sich auch allein zurechtfindet)
