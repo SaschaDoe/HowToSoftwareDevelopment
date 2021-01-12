@@ -1,7 +1,7 @@
 
 # Consider while coding or reviewing
 
-## Names
+## Syntax
 <details>
   <summary>Call things by real name</summary>
   
@@ -62,7 +62,23 @@ public class Order
 ```
 </details>
 
+<details>
+  <summary>Code/Documenation in englisch</summary>
+</details>
+
+* Consider coding style cuide of your project see also C# Code Conventions](https://docs.microsoft.com/de-de/dotnet/csharp/programming-guide/inside-a-program/coding-conventions)  
+* Everything should be written from left to right (no horizontal alignment, no pseudo GOTO, no deep nesting which you must read from right to left: AddOne(CastValue(ReadFromConsole())))
+
 ## Structure
+
+<details>
+  <summary>Files, directories and namespaces</summary>
+  
+  Files and directories should be mirrored in the namespaces.
+  Also all Files, directories and namespaces should be mirrored in the structure and names of the test project.
+
+</details>
+
 <details>
   <summary>Avoid  coupling</summary>
   
@@ -822,6 +838,14 @@ code, you're Doing It Wrong(TM):
 // {
 //      
 // }
+```
+
+</details>
+
+<details>
+  <summary>Don't commend code, use descriptive names instead/summary>
+  With the exception of commending in xml about public members to enable automated documentation generation.
+
 ```
 
 </details>
