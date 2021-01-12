@@ -1017,7 +1017,7 @@ catch (Exception ex)
 
 <details>
   <summary>Arrange Act Assert</summary>
-  
+    
  
   **Good**
   
@@ -1027,10 +1027,13 @@ catch (Exception ex)
     [Fact]
     public void Handle30DayMonths()
     {
+        //Arrange
         var date = new MyDateTime("1/1/2015");
-
+        
+        //Act
         date.AddDays(30);
 
+        //Assert
         Assert.Equal("1/31/2015", date);
     }
 ```
