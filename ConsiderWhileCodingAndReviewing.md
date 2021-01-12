@@ -68,7 +68,7 @@ public class Order
   
   [Couplig](https://en.wikipedia.org/wiki/Coupling_(computer_programming))
 
-
+</details>
 
 <details>
   <summary>Avoid deep nesting</summary>
