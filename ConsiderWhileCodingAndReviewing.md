@@ -110,7 +110,7 @@ public class Order
 <details>
   <summary>Order of class members</summary>
   
-  The order of the class members should be equal (fields, properties, constructor, public, private etc) Reshaper can this outomatically.
+  The order of the class members should be equal in all files. The order of fields, properties, constructor, public, private etc... Reshaper can refactor your code  automatically.
 
 </details>
 
