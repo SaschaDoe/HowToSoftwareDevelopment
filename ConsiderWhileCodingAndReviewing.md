@@ -714,7 +714,7 @@ public List<EmployeeData> ShowList(Employee employees)
 </details>
 <details>
   <summary>OOP</summary>
-Try to [analyse](https://de.wikipedia.org/wiki/Objektorientierte_Analyse_und_Design#Objektorientierte_Analyse) and depict [reality](https://de.wikipedia.org/wiki/Fachlichkeit). Additionally some problems can be solved by [Design Patterns](https://en.wikipedia.org/wiki/Software_design_pattern) verwenden.
+Try to [analyse](https://en.wikipedia.org/wiki/Object-oriented_analysis_and_design) and depict [reality](https://de.wikipedia.org/wiki/Fachlichkeit). Additionally some problems can be solved by [Design Patterns](https://en.wikipedia.org/wiki/Software_design_pattern) verwenden.
 
   Advantages:  
   * Good structure of classes that you no from the domain
