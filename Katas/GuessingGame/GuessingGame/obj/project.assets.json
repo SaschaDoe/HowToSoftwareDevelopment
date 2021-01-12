@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Luebke\\RiderProjects\\HowToSoftwareDevelopment\\Katas\\SumOfDigitsKata\\SumOfDigitsKata\\SumOfDigitsKata.csproj",
-      "projectName": "SumOfDigitsKata",
-      "projectPath": "C:\\Users\\Luebke\\RiderProjects\\HowToSoftwareDevelopment\\Katas\\SumOfDigitsKata\\SumOfDigitsKata\\SumOfDigitsKata.csproj",
+      "projectUniqueName": "C:\\Users\\Luebke\\RiderProjects\\HowToSoftwareDevelopment\\Katas\\GuessingGame\\GuessingGame\\GuessingGame.csproj",
+      "projectName": "GuessingGame",
+      "projectPath": "C:\\Users\\Luebke\\RiderProjects\\HowToSoftwareDevelopment\\Katas\\GuessingGame\\GuessingGame\\GuessingGame.csproj",
       "packagesPath": "C:\\Users\\Luebke\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Luebke\\RiderProjects\\HowToSoftwareDevelopment\\Katas\\SumOfDigitsKata\\SumOfDigitsKata\\obj\\",
+      "outputPath": "C:\\Users\\Luebke\\RiderProjects\\HowToSoftwareDevelopment\\Katas\\GuessingGame\\GuessingGame\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

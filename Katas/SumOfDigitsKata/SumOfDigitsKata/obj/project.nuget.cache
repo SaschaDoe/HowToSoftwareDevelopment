@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "owqIiQ+47qW9SpmShWjxGvd+3Pz9To4LXzfWOALVAl9CiOaVdAsOsKJxGPu1wWdRxj8ArPmb4Id3MgJbbv94Cw==",
+  "dgSpecHash": "pvbACk88bQwoSh/Ncw44eAjcDcYeILGjCjLMSXBiEH/kV8/yIbPnDQmOAKS2jpnZDqc238aohAbXw5k6GxgOdg==",
   "success": true,
-  "projectFilePath": "/home/saschbot/RiderProjects/HowToSoftwareDevelopment/Katas/SumOfDigitsKata/SumOfDigitsKata/SumOfDigitsKata.csproj",
+  "projectFilePath": "C:\\Users\\Luebke\\RiderProjects\\HowToSoftwareDevelopment\\Katas\\SumOfDigitsKata\\SumOfDigitsKata\\SumOfDigitsKata.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
