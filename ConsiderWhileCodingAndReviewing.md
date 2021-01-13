@@ -753,8 +753,8 @@ public class Manager
 
 <details>
   <summary>Don’t repeat yourself (DRY)</summary>
-  <p><a href="https://de.wikipedia.org/wiki/Don%E2%80%99t_repeat_yourself">Don't repeat yourself</a></p> aber 
-  <p><a href="https://en.wikipedia.org/wiki/Rule_of_three_(computer_programming)">Rule of three</a></p> beachten.
+ <a href="https://de.wikipedia.org/wiki/Don%E2%80%99t_repeat_yourself">Don't repeat yourself</a> aber <a href="https://en.wikipedia.org/wiki/Rule_of_three_(computer_programming)">Rule of three</a> beachten.
+   
 **Bad**
   
 <p>
