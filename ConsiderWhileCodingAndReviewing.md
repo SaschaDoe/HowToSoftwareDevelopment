@@ -94,7 +94,7 @@ public class Order
   <summary>Code/Documenation in englisch</summary>
 </details>
 
-* Consider coding style guide of your project see also C# Code Conventions](https://docs.microsoft.com/de-de/dotnet/csharp/programming-guide/inside-a-program/coding-conventions)  
+* Consider coding style guide of your project see also [C# Code Conventions](https://docs.microsoft.com/de-de/dotnet/csharp/programming-guide/inside-a-program/coding-conventions)  
 * Everything should be written from left to right (no horizontal alignment, no pseudo GOTO, no deep nesting which you must read from right to left: AddOne(CastValue(ReadFromConsole())))
 
 ## Structure
