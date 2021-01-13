@@ -1,4 +1,4 @@
-<p><a href="https://en.wikipedia.org/">Wikipedia</a></p>
+
 # Consider while coding or reviewing
 
 ## Syntax
@@ -105,12 +105,13 @@ public class Order
     }
 
 ```
+</details>
 
 <details>
   <summary>Code/Documenation in englisch</summary>
 </details>
 
-* Consider coding style guide of your project see also [C# Code Conventions](https://docs.microsoft.com/de-de/dotnet/csharp/programming-guide/inside-a-program/coding-conventions)  
+* Consider coding style guide of your project see also  [C# Code Conventions](https://docs.microsoft.com/de-de/dotnet/csharp/programming-guide/inside-a-program/coding-conventions)  
 
 
 ## Structure
@@ -183,8 +184,7 @@ public Car
 
 <details>
   <summary>Avoid  coupling</summary>
-  
-  [Couplig](https://en.wikipedia.org/wiki/Coupling_(computer_programming))
+  <p><a href="https://en.wikipedia.org/wiki/Coupling_(computer_programming)">Couplig</a></p>
 
 </details>
 
@@ -417,8 +417,7 @@ public class Save
 <details>
   <summary>Use method chaining</summary>
   
-[Fluent API](https://de.wikipedia.org/wiki/Fluent_Interface)
-
+<p><a href="https://de.wikipedia.org/wiki/Fluent_Interface">Fluent API</a></p>
 
 </details>
 
@@ -458,8 +457,7 @@ public void CheckInPerson(Person person)
   <summary>Open/Close Principlee</summary>
   
 Closed for modifiaction but open for extension
-[Example](https://dotnetcoretutorials.com/2019/10/18/solid-in-c-open-closed-principle/)
-
+<p><a href="https://dotnetcoretutorials.com/2019/10/18/solid-in-c-open-closed-principle/">Example</a></p>
 </details>
 
 <details>
@@ -755,8 +753,8 @@ public class Manager
 
 <details>
   <summary>Don’t repeat yourself (DRY)</summary>
-[Don't repeat yourself](https://de.wikipedia.org/wiki/Don%E2%80%99t_repeat_yourself) aber nicht übertreiben https://en.wikipedia.org/wiki/Rule_of_three_(computer_programming)
-  
+  <p><a href="https://de.wikipedia.org/wiki/Don%E2%80%99t_repeat_yourself">Don't repeat yourself</a></p> aber 
+  <p><a href="https://en.wikipedia.org/wiki/Rule_of_three_(computer_programming)">Rule of three</a></p> beachten.
 **Bad**
   
 <p>
