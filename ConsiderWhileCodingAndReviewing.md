@@ -753,8 +753,10 @@ public class Manager
 
 <details>
   <summary>Don’t repeat yourself (DRY)</summary>
+   
  <a href="https://de.wikipedia.org/wiki/Don%E2%80%99t_repeat_yourself">Don't repeat yourself</a> aber <a href="https://en.wikipedia.org/wiki/Rule_of_three_(computer_programming)">Rule of three</a> beachten.
    
+    
 **Bad**
   
 <p>
@@ -816,21 +818,21 @@ public List<EmployeeData> ShowList(Employee employees)
 
 <details>
   <summary>Command Querry Seperation</summary>
-[CQS](https://de.wikipedia.org/wiki/Command-Query-Separation)
-
+    
+ <a href="https://de.wikipedia.org/wiki/Command-Query-Separation">CQS</a>
+   
   </details>
   
   <details>
   <summary>Referential transparency</summary>
-[referential transparency](https://en.wikipedia.org/wiki/Referential_transparency)
-
+   
+ <a href="https://en.wikipedia.org/wiki/Referential_transparency">referential transparency</a>
+   
   </details>
 
-
-</details>
 <details>
   <summary>OOP</summary>
-Try to [analyse](https://en.wikipedia.org/wiki/Object-oriented_analysis_and_design) and depict [reality](https://de.wikipedia.org/wiki/Fachlichkeit). Additionally some problems can be solved by [Design Patterns](https://en.wikipedia.org/wiki/Software_design_pattern) verwenden.
+Try to <a href="https://en.wikipedia.org/wiki/Object-oriented_analysis_and_design">analyse</a> and depict <a href="https://de.wikipedia.org/wiki/Fachlichkeit">reality</a>. Additionally some problems can be solved by <a href="https://en.wikipedia.org/wiki/Software_design_pattern">Design Patterns</a> verwenden.
 
   Advantages:  
   * Good structure of classes that you no from the domain
@@ -840,19 +842,20 @@ Try to [analyse](https://en.wikipedia.org/wiki/Object-oriented_analysis_and_desi
   * You must use (non domain) design patterns with many classes
   * Not declarive
   
-  See: [FizzBuzzEnterprise](https://github.com/EnterpriseQualityCoding/FizzBuzzEnterpriseEdition)
-  </details>
+  See: 
+<a href="https://github.com/EnterpriseQualityCoding/FizzBuzzEnterpriseEdition">FizzBuzzEnterprise</a>
+</details>
 
 <details>
   <summary>Functional Programming</summary>
-You can programm functional, means with another declarative [paradigm](https://en.wikipedia.org/wiki/Programming_paradigm) in C#. 
+You can programm functional, means with another declarative <a href="https://en.wikipedia.org/wiki/Programming_paradigm">paradigm</a> in C#. 
   
   How to:
   * Code in Expressions instead of using loops and if else
   * Pure functions should be seperated from unpure functions (dependency rejection)
   * Data and Methods are stricly seperated
   * Immutable data only
-  * No recursion. Use of generators and [takeWhile](https://docs.microsoft.com/de-de/dotnet/api/system.linq.enumerable.takewhile?view=net-5.0)
+  * No recursion. Use of generators and <a href="https://docs.microsoft.com/de-de/dotnet/api/system.linq.enumerable.takewhile?view=net-5.0">takeWhile</a>
   * Pipelining
   
   Advantages:  
@@ -867,7 +870,7 @@ You can programm functional, means with another declarative [paradigm](https://e
   
   </details>
 
-* For more Architecture best practices see [Clean Architecture](https://github.com/thangchung/clean-code-dotnet/blob/master/cheatsheets/Clean-Architecture-V1.0.pdf)
+* For more Architecture best practices see <a href="https://github.com/thangchung/clean-code-dotnet/blob/master/cheatsheets/Clean-Architecture-V1.0.pdf">Clean Architecture</a>
 
 ## Concurrency
 
@@ -912,7 +915,7 @@ disoriented. Here's a quick reference of solutions to common problems.
 
 ### Async and Await Guidelines
 
-Read the [Task-based Asynchronous Pattern (TAP) document](http://www.microsoft.com/download/en/details.aspx?id=19957).
+Read the <a href="http://www.microsoft.com/download/en/details.aspx?id=19957">Task-based Asynchronous Pattern (TAP) document</a>
 It is extremely well-written, and includes guidance on API design and the proper
 use of async/await (including cancellation and progress reporting).
 
@@ -1127,19 +1130,19 @@ public class MakeDotNetGreatAgainTests
 <details>
   <summary>Equivalence partitioningt</summary>
   100% Code coverage is not enough. It is best to have a 100% equivalence partitioning. But sometimes with heavy math it is not easy to accomplish and not possible to know in a not logical programming paradigma. Test also on the minimum and maximum values of value types and with very big objects.
-  [Equivalence partitioning](https://en.wikipedia.org/wiki/Equivalence_partitioning)
+  <a href="https://en.wikipedia.org/wiki/Equivalence_partitioning">Equivalence partitioning</a>
 </details>
 
 
 <details>
   <summary>Reliabel, independent and well namend</summary>
-  Tests should be reliabel](https://de.wikipedia.org/wiki/Reliabilit%C3%A4t). They should be independent of other tests and have a short but descriptive name of which method you use, which outcome you expect and which preconditions are set. One test class should test one class and for every method there should be a region.
+  Tests should be <a href="https://de.wikipedia.org/wiki/Reliabilit%C3%A4t">reliabel</a>.They should be independent of other tests and have a short but descriptive name of which method you use, which outcome you expect and which preconditions are set. One test class should test one class and for every method there should be a region.
 </details>
 
 
 <details>
   <summary>Don't change code to test</summary>
-Unless it is adding an interface for [mocking](https://github.com/Moq/moq4/wiki/Quickstart). 
+Unless it is adding an interface for <a href="https://github.com/Moq/moq4/wiki/Quickstart">mocking</a>. 
 </details>
 
 <details>
