@@ -36,7 +36,7 @@ namespace GuessingGameTests.UnitTests.GuessingGameOOP
 
         [TestMethod]
         [TestCategory("Unit")]
-        public void Evaluate_True_When_Equal()
+        public void Evaluate_Right_When_Equal()
         {
             const int maxRange = 1;
             var numberGuessingGameMock = new NumberGuessingGame(maxRange);
@@ -44,13 +44,13 @@ namespace GuessingGameTests.UnitTests.GuessingGameOOP
             var mockRep = new Mock<NumberGuessingGame>(numberGuessingGameMock)
                 .As<INumberGuessingGame>();
             mockRep.Setup(x => x.RandomNumber).Returns(0);
-
-            Assert.IsTrue(numberGuessingGameMock.Evaluate(0));
+            
+            Assert.AreEqual(GuessResult.Right,numberGuessingGameMock.Evaluate(0));
         }
         
         [TestMethod]
         [TestCategory("Unit")]
-        public void Evaluate_False_When_NotEqual()
+        public void Evaluate_ToBig_When_Guess_Is_Greater()
         {
             const int maxRange = 1;
             var numberGuessingGameMock = new NumberGuessingGame(maxRange);
@@ -59,7 +59,22 @@ namespace GuessingGameTests.UnitTests.GuessingGameOOP
                 .As<INumberGuessingGame>();
             mockRep.Setup(x => x.RandomNumber).Returns(0);
 
-            Assert.IsFalse(numberGuessingGameMock.Evaluate(1));
+            Assert.AreEqual(GuessResult.ToBig,numberGuessingGameMock.Evaluate(1));
+        }
+        
+        [TestMethod]
+        [TestCategory("Unit")]
+        public void Evaluate_ToSmall_When_Guess_Is_Smaller()
+        {
+            const int maxRange = 1;
+            var randomMock = new Mock<IRandom>();
+            randomMock.Setup(x => x.Next(0,maxRange)).Returns(1);
+            var numberGuessingGame = new NumberGuessingGame(maxRange,randomMock.Object);
+            numberGuessingGame.GenerateNewRandomNumber();
+
+            var evaluation = numberGuessingGame.Evaluate(0);
+            
+            Assert.AreEqual(GuessResult.ToSmall,evaluation);
         }
 
         #endregion
