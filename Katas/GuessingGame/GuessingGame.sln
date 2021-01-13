@@ -2,7 +2,7 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuessingGame", "GuessingGame\GuessingGame.csproj", "{FC227098-B848-4FB4-824D-FCE0A07A40D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuessingGameTests", "GuessingGameTests\GuessingGameTests.csproj", "{3ED2F7B5-23EB-42B4-BE51-F6D0191487AB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuessingGameOOPTests", "GuessingGameOOPTests\GuessingGameOOPTests.csproj", "{3ED2F7B5-23EB-42B4-BE51-F6D0191487AB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

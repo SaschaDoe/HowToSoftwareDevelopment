@@ -1,27 +1,24 @@
 ﻿using System;
+using GuessingGameTests.UnitTests.GuessingGameOOP.IO;
 
 namespace GuessingGame.GuessingGameOOP
 {
     public class NumberGuessingGame : INumberGuessingGame
     {
         private readonly IRandom _random;
-        private const int MinimalRange = 1;
 
-        public NumberGuessingGame(int maxRange, IRandom random = null)
+        public NumberGuessingGame(RandomNumberRange maxRange, IRandom random = null)
         {
             if (random == null)
             {
                 _random = new Randomizer();
             }
             
-            if (maxRange < MinimalRange)
-            {
-                throw new ArgumentException($"Range {maxRange} is under {MinimalRange}");
-            }
+           
 
             _random = random;
 
-            MaxRange = maxRange;
+            MaxRange = maxRange.Max;
         }
 
         public int MaxRange { get; }

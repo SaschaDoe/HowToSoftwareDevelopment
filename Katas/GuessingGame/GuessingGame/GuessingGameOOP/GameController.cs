@@ -1,6 +1,7 @@
 using System;
 using GuessingGame.GuessingGameOOP.IO;
 using GuessingGame.GuessingGameOOP.IO.Console;
+using GuessingGameTests.UnitTests.GuessingGameOOP.IO;
 
 namespace GuessingGame.GuessingGameOOP
 {
@@ -22,7 +23,11 @@ namespace GuessingGame.GuessingGameOOP
             OutputProxy.ShowStartMessage();
             OutputProxy.ShowEnterMaxRangeMessage();
             var maxRange = InputProxy.GetMaxRange();
-            GuessingGame = new NumberGuessingGame(maxRange);
+            var randomNumberRange = new RandomNumberRange()
+            {
+                Max = Convert.ToInt32(maxRange)
+            };
+            GuessingGame = new NumberGuessingGame(randomNumberRange);
         }
     }
 }

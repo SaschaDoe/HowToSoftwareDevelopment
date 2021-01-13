@@ -19,7 +19,10 @@ namespace GuessingGameTests.UnitTests.GuessingGameOOP
         [TestCategory("Unit")]
         public void Constructor_NewGameController()
         {
-            const int maxRange = 1;
+            var maxRange = new RandomNumberRange()
+            {
+                Max = 1
+            };
             var numberGuessingGame = new NumberGuessingGame(maxRange);
             var consoleProxy = new ConsoleOuputProxy();
             var consoleInputProxy = new ConsoleInputProxy();
@@ -40,7 +43,10 @@ namespace GuessingGameTests.UnitTests.GuessingGameOOP
         [TestCategory("Unit")]
         public void Constructor_NullArgumentException_WhenProxy_Is_Null()
         {
-            const int maxRange = 1;
+            var maxRange = new RandomNumberRange()
+            {
+                Max = 1
+            };
             var numberGuessingGame = new NumberGuessingGame(maxRange);
             Assert.ThrowsException<ArgumentNullException>(() => new GameController(numberGuessingGame,null,null));
         }
@@ -53,10 +59,13 @@ namespace GuessingGameTests.UnitTests.GuessingGameOOP
         [TestCategory("Unit")]
         public void StartGame()
         {
-            const int maxRange = 1;
+            var maxRange = new RandomNumberRange()
+            {
+                Max = 1
+            };
             var numberGuessingGame = new NumberGuessingGame(maxRange);
             var consoleProxy = new ConsoleOuputProxy();
-            var consoleInputProxy = new ConsoleInputProxy();
+            var consoleInputProxy = new TestConsoleProxy();
             var gameController = new GameController(numberGuessingGame, consoleProxy, consoleInputProxy);
 
             using var consoleOutput = new ConsoleOutput();
@@ -70,7 +79,34 @@ namespace GuessingGameTests.UnitTests.GuessingGameOOP
         [TestCategory("Unit")]
         public void StartGame_InputMaxRange()
         {
-            const int maxRange = 1;
+            var maxRange = new RandomNumberRange()
+            {
+                Max = 1
+            };
+            var numberGuessingGame = new NumberGuessingGame(maxRange);
+            var consoleOutputProxy = new ConsoleOuputProxy();
+            var consoleInputProxyRep = new Mock<IInputProxy>();
+            consoleInputProxyRep.Setup(x => x.GetMaxRange()).Returns("1");
+            
+            var gameController = new GameController(numberGuessingGame, consoleOutputProxy, consoleInputProxyRep.Object);
+            
+            gameController.StartGame();
+            
+            Assert.AreEqual(1,gameController.GuessingGame.MaxRange);
+        }
+
+        #endregion
+
+        #region NextTurn
+
+        [TestMethod]
+        [TestCategory("Unit")]
+        public void NextTurn_GuessMessage()
+        {
+            var maxRange = new RandomNumberRange()
+            {
+                Max = 1
+            };
             var numberGuessingGame = new NumberGuessingGame(maxRange);
             var consoleOutputProxy = new ConsoleOuputProxy();
             var consoleInputProxyRep = new Mock<IInputProxy>();
@@ -81,7 +117,8 @@ namespace GuessingGameTests.UnitTests.GuessingGameOOP
             using var consoleOutput = new ConsoleOutput();
             gameController.StartGame();
             
-            Assert.AreEqual(1,gameController.GuessingGame.MaxRange);
+            Assert.AreEqual($"Guess new random number{Environment.NewLine}",
+                consoleOutput.GetOutput());
         }
 
         #endregion
