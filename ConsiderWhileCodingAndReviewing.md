@@ -815,6 +815,7 @@ public List<EmployeeData> ShowList(Employee employees)
     }
 }
 ```
+</details>
 
 <details>
   <summary>Command Querry Seperation</summary>
