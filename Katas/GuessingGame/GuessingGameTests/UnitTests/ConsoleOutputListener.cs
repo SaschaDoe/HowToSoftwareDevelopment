@@ -1,25 +1,25 @@
 using System;
 using System.IO;
 
-namespace GuessingGameTests.UnitTests.GuessingGameOOP.IO
+namespace GuessingGameTests.UnitTests
 {
-    public class ConsoleOutput : IDisposable
+    public class ConsoleOutputListener : IDisposable
     {
         private readonly StringWriter _stringWriter;
         private readonly TextWriter _originalOutput;
- 
-        public ConsoleOutput()
+
+        public ConsoleOutputListener()
         {
             _stringWriter = new StringWriter();
             _originalOutput = Console.Out;
             Console.SetOut(_stringWriter);
         }
- 
+
         public string GetOutput()
         {
             return _stringWriter.ToString();
         }
- 
+
         public void Dispose()
         {
             Console.SetOut(_originalOutput);
