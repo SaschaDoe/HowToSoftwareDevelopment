@@ -1,85 +1,39 @@
 {
   "format": 1,
   "restore": {
-    "/home/saschbot/RiderProjects/HowToSoftwareDevelopment/Katas/GuessingGame/GuessingGameTests/GuessingGameTests.csproj": {}
+    "C:\\Users\\Luebke\\RiderProjects\\HowToSoftwareDevelopment\\Katas\\GuessingGame\\GuessingGameTests\\GuessingGameTests.csproj": {}
   },
   "projects": {
-    "/home/saschbot/RiderProjects/HowToSoftwareDevelopment/Katas/GuessingGame/GuessingGame/GuessingGame.csproj": {
+    "C:\\Users\\Luebke\\RiderProjects\\HowToSoftwareDevelopment\\Katas\\GuessingGame\\GuessingGameTests\\GuessingGameTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/saschbot/RiderProjects/HowToSoftwareDevelopment/Katas/GuessingGame/GuessingGame/GuessingGame.csproj",
-        "projectName": "GuessingGame",
-        "projectPath": "/home/saschbot/RiderProjects/HowToSoftwareDevelopment/Katas/GuessingGame/GuessingGame/GuessingGame.csproj",
-        "packagesPath": "/home/saschbot/.nuget/packages/",
-        "outputPath": "/home/saschbot/RiderProjects/HowToSoftwareDevelopment/Katas/GuessingGame/GuessingGame/obj/",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "/home/saschbot/.nuget/NuGet/NuGet.Config"
-        ],
-        "originalTargetFrameworks": [
-          "net5.0"
-        ],
-        "sources": {
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
-            "projectReferences": {}
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/current/sdk/5.0.102/RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "/home/saschbot/RiderProjects/HowToSoftwareDevelopment/Katas/GuessingGame/GuessingGameTests/GuessingGameTests.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "/home/saschbot/RiderProjects/HowToSoftwareDevelopment/Katas/GuessingGame/GuessingGameTests/GuessingGameTests.csproj",
+        "projectUniqueName": "C:\\Users\\Luebke\\RiderProjects\\HowToSoftwareDevelopment\\Katas\\GuessingGame\\GuessingGameTests\\GuessingGameTests.csproj",
         "projectName": "GuessingGameTests",
-        "projectPath": "/home/saschbot/RiderProjects/HowToSoftwareDevelopment/Katas/GuessingGame/GuessingGameTests/GuessingGameTests.csproj",
-        "packagesPath": "/home/saschbot/.nuget/packages/",
-        "outputPath": "/home/saschbot/RiderProjects/HowToSoftwareDevelopment/Katas/GuessingGame/GuessingGameTests/obj/",
+        "projectPath": "C:\\Users\\Luebke\\RiderProjects\\HowToSoftwareDevelopment\\Katas\\GuessingGame\\GuessingGameTests\\GuessingGameTests.csproj",
+        "packagesPath": "C:\\Users\\Luebke\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Luebke\\RiderProjects\\HowToSoftwareDevelopment\\Katas\\GuessingGame\\GuessingGameTests\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "/home/saschbot/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Luebke\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
+          "\\\\info.team\\itdata\\iNuGet\\public": {},
+          "\\\\info.team\\itdata\\iNuGet\\zenLab\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "/home/saschbot/RiderProjects/HowToSoftwareDevelopment/Katas/GuessingGame/GuessingGame/GuessingGame.csproj": {
-                "projectPath": "/home/saschbot/RiderProjects/HowToSoftwareDevelopment/Katas/GuessingGame/GuessingGame/GuessingGame.csproj"
+              "C:\\Users\\Luebke\\RiderProjects\\HowToSoftwareDevelopment\\Katas\\GuessingGame\\GuessingGame\\GuessingGame.csproj": {
+                "projectPath": "C:\\Users\\Luebke\\RiderProjects\\HowToSoftwareDevelopment\\Katas\\GuessingGame\\GuessingGame\\GuessingGame.csproj"
               }
             }
           }
@@ -130,7 +84,65 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/current/sdk/5.0.102/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Luebke\\RiderProjects\\HowToSoftwareDevelopment\\Katas\\GuessingGame\\GuessingGame\\GuessingGame.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Luebke\\RiderProjects\\HowToSoftwareDevelopment\\Katas\\GuessingGame\\GuessingGame\\GuessingGame.csproj",
+        "projectName": "GuessingGame",
+        "projectPath": "C:\\Users\\Luebke\\RiderProjects\\HowToSoftwareDevelopment\\Katas\\GuessingGame\\GuessingGame\\GuessingGame.csproj",
+        "packagesPath": "C:\\Users\\Luebke\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Luebke\\RiderProjects\\HowToSoftwareDevelopment\\Katas\\GuessingGame\\GuessingGame\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Luebke\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "\\\\info.team\\itdata\\iNuGet\\public": {},
+          "\\\\info.team\\itdata\\iNuGet\\zenLab\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

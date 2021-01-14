@@ -21,5 +21,15 @@ namespace GuessingGame.GuessingGameFunctional
                 InputString = consoleInputProxy.GetInput()
             };
         }
+
+        public static void ShowExitMessage(UserInput userInput)
+        {
+            Console.Write($"Game quit.{Environment.NewLine}");
+        }
+
+        public static void ShowMaxRangeMustBeGreaterZeroMessage(UserInput userInput)
+        {
+            Console.Write($"Max Range must be greater zero.{Environment.NewLine}");
+        }
     }
 }

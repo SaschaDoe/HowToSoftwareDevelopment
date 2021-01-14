@@ -6,14 +6,22 @@ namespace GuessingGame.GuessingGameFunctional
     {
         public string InputString { get; init; }
 
-        public int InputInt
+        public bool ParseToInt(out int value)
+        {
+            return int.TryParse(InputString,out value);
+        }
+
+        public bool IsQuit
         {
             get
             {
-                return Convert.ToInt32(InputString);
+                if (InputString.Equals("quit") || InputString.Equals("Quit"))
+                {
+                    return true;
+                }
+
+                return false;
             }
         }
-
-        public bool IsQuit { get; }
     }
 }

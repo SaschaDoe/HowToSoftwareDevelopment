@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rJxx9jIjrp+0sgH9RAyvR3bUGqRzTZroTYgK0DsbwxVR1ZYc4ruKnRGTqPBgejpeF18QGcRQrHe3MZIZ/ssZvw==",
+  "dgSpecHash": "mMjNFRz1tGov68tZ0K5t4YrP5PGLS0y+b0IN6YpM24KEKoWpFULL2nLpvPnEjOWpN0CwGo7dyNz/xlvK185n6A==",
   "success": true,
-  "projectFilePath": "/home/saschbot/RiderProjects/HowToSoftwareDevelopment/Katas/GuessingGame/GuessingGame/GuessingGame.csproj",
+  "projectFilePath": "C:\\Users\\Luebke\\RiderProjects\\HowToSoftwareDevelopment\\Katas\\GuessingGame\\GuessingGame\\GuessingGame.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
